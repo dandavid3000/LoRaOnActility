@@ -13,11 +13,11 @@ Before register a device on their network, we need to setup a route (callback) b
     * Set **Active** for `Status`.
     * Click `Add` from `Add a route` and choose **Blast** (to send to all Destinations) or `Sequential` (to send one by one).
     * From `Destination` click `Add` to add a route to your server and dont forget to click `Save` to save the setting.
-    [![Application server](/img/3.PNG)]
+    [![Application server](/img/3.png)]
 3. Choose `AS routing profiles` and click on `Create` button.
 4. Fill `Name`, choose `LoRaWAN` for `Type` and click `Create`:
     * Click `Add` from `Destinations` to add a new destination. Choose **Local application server** for `Type` and your new destination created by your from the previous step. Click `Add` then `Save` to finish this step.
-     [![Create AS routing profile](/img/4.PNG)]
+     [![Create AS routing profile](/img/4.png)]
 
 Here we finished to set up an UL callback to our servers. We can add more callbacks in the `Application servers` if we'd like to.
 
@@ -36,7 +36,7 @@ Here we finished to set up an UL callback to our servers. We can add more callba
 #### Downlink callback
 * In order to ask for a DL on Actility, we need to register a token for Authentication. Either we can create one from a [shortcut](https://dx-api.thingpark.com/getstarted/#/) of `DX API Console` or from the API. However, the token created from this shortcut will be expired in 1 week as default.
 * We are able to create token in `ThingPark DX Admin API` so navigate to this page to create one. Click on `Token gernation`
-    [![Create a token](/img/4.PNG)]
+    [![Create a token](/img/4.png)]
     * grant_type: client_credentials
     * client_id, client_secret: username & password
     * renewToken: true
